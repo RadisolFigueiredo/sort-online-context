@@ -7,14 +7,6 @@ import * as S from './styles';
 import { formatCurrency } from '../utils/formatCurrency';
 import { Button } from '@mui/material';
 
-// interface ProductProps {
-//   id: number;
-//   image: string;
-//   title: string;
-//   description: string;
-//   price: number;
-//   priceDiscount: number;
-// }
 export default function Home() {
   const productList = [
     {
@@ -120,7 +112,10 @@ export default function Home() {
                   </Button>
                 ) : (
                   <S.Button productAvailable onClick={() => addProduct(item)}>
-                    Add to cart
+                    <S.AlignButton>
+                      Add to cart
+                      <AddIcon fontSize='small' />
+                    </S.AlignButton>
                   </S.Button>
                 )}
               </S.BoxInfoPriceCart>

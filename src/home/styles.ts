@@ -69,7 +69,7 @@ interface InTheCart {
 export const Button = styled.button<InTheCart>`
   height: 35px;
   border-radius: 5px;
-  width: 98px;
+  width: 100px;
   display: flex;
   align-items: center;
   background-color: ${({ productAvailable }) =>
@@ -80,4 +80,11 @@ export const Button = styled.button<InTheCart>`
   font-weight: 600;
   font-size: 12px;
   justify-content: center;
+`;
+
+export const AlignButton = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 `;
