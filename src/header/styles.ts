@@ -11,7 +11,7 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 0 40px;
   position: fixed;
-  width: 94%;
+  width: 100%;
   overflow: hidden;
   top: 0;
 `;
@@ -47,6 +47,7 @@ export const LogoText = styled.p`
 export const BoxCart= styled(Link)`
   text-decoration: none;
   color: #000000;
+  margin-right: 80px;
 `;
 
 
@@ -59,6 +60,8 @@ export const BoxProductInCartLength = styled.div`
   position: absolute;
   top: 4px;
   right: 32px;
+  margin-right: 80px;
+
 `;
 export const ProductInCartLength = styled.p`
   color: #ffffff;
